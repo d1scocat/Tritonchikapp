@@ -14,6 +14,7 @@ this app is useless without an api, access it at the respective repository (do t
 ```bash
 git clone https://github.com/ecxqua/Tritonchikeee.git
 cd Tritonchikeee
+git checkout api
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
