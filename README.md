@@ -17,5 +17,8 @@ cd Tritonchikeee
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+python -m database.card_database
+python -m database.migrate_dataset
+python -m database.build_faiss_index
 uvicorn api.entrypoint:app --port 3002
 ```
