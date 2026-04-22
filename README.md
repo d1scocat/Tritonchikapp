@@ -7,7 +7,7 @@ npm run start
 ```
 
 ## Notes
-if you use any proxy or other network redirecting application on your device, it might interfere with the internal Vite <-> Electron bridge
+if you use any proxy or other network redirecting application on your device, it might interfere with the internal Vite -- Electron bridge
 
 ## API
 this app is useless without an api, access it at the respective repository (do this in a different repository):
