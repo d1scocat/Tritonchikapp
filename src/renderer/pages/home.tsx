@@ -89,7 +89,7 @@ export function Home() {
             <CardHeader>
               <FilePlus className="h-8 w-8 text-accent-foreground mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Новая карточка</CardTitle>
-              <CardDescription>Создать новую карточку особи (IK-1, IK-2, KV-1, KV-2)</CardDescription>
+              <CardDescription>Создать новую карточку особи (ИК-1, ИК-2, КВ-1, КВ-2)</CardDescription>
             </CardHeader>
           </Card>
         </Link>

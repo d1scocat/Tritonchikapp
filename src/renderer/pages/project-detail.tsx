@@ -354,10 +354,10 @@ export function ProjectDetail() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="all">Все типы</SelectItem>
-                      <SelectItem value="IK1">ИК-1</SelectItem>
-                      <SelectItem value="IK2">ИК-2</SelectItem>
-                      <SelectItem value="KV1">КВ-1</SelectItem>
-                      <SelectItem value="KV2">КВ-2</SelectItem>
+                      <SelectItem value="ИК-1">ИК-1</SelectItem>
+                      <SelectItem value="ИК-2">ИК-2</SelectItem>
+                      <SelectItem value="КВ-1">КВ-1</SelectItem>
+                      <SelectItem value="КВ-2">КВ-2</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

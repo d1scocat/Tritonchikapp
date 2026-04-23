@@ -51,7 +51,7 @@ export async function recognizeNewt(params: {
 }
 
 export type CreateCardRequest = {
-  cardType: "IK1" | "IK2" | "KV1" | "KV2";
+  cardType: "ИК-1" | "ИК-2" | "КВ-1" | "КВ-2";
   projectId?: number;
   data: {
     idNumber: string;
@@ -170,14 +170,14 @@ export async function createProject(data: {
 export type Newt = {
   id: string;
   projectId?: string;
-  cardType?: "IK1" | "IK2" | "KV1" | "KV2";
+  cardType?: "ИК-1" | "ИК-2" | "КВ-1" | "КВ-2";
   status?: string;
   sex?: string;
   createdAt: string;
 };
 
 export type NewtCard = {
-  cardType: "IK1" | "IK2" | "KV1" | "KV2";
+  cardType: "ИК-1" | "ИК-2" | "КВ-1" | "КВ-2";
   data: Record<string, any>;
   photos: string[];
 };

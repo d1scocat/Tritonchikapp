@@ -33,7 +33,7 @@ export function NewCard() {
 
   const { toast } = useToast();
   
-  const [cardType, setCardType] = useState<"IK1" | "IK2" | "KV1" | "KV2">("IK1");
+  const [cardType, setCardType] = useState<"ИК-1" | "ИК-2" | "КВ-1" | "КВ-2">("ИК1");
   const [projectId, setProjectId] = useState<string>(defaultProjectId ? defaultProjectId.toString() : "none");
   const [data, setData] = useState<Record<string, any>>({});
   const [photos, setPhotos] = useState<string[]>([]);
@@ -108,7 +108,7 @@ export function NewCard() {
       </div>
     );
 
-    if (cardType === "IK1") {
+    if (cardType === "ИК-1") {
       return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {commonFields}
@@ -124,7 +124,7 @@ export function NewCard() {
           <div className="space-y-2 col-span-full"><Label>Примечания</Label><Textarea onChange={e => updateField("notes", e.target.value)} /></div>
         </div>
       );
-    } else if (cardType === "IK2") {
+    } else if (cardType === "ИК-2") {
       return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {commonFields}
@@ -138,7 +138,7 @@ export function NewCard() {
           <div className="space-y-2 col-span-full"><Label>Примечания</Label><Textarea onChange={e => updateField("notes", e.target.value)} /></div>
         </div>
       );
-    } else if (cardType === "KV1") {
+    } else if (cardType === "КВ-1") {
       return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {commonFields}
@@ -211,10 +211,10 @@ export function NewCard() {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="IK1">ИК-1 (Разведение в неволе)</SelectItem>
-                  <SelectItem value="IK2">ИК-2 (Выпуск в природу)</SelectItem>
-                  <SelectItem value="KV1">КВ-1 (Встреча в природе — подробная)</SelectItem>
-                  <SelectItem value="KV2">КВ-2 (Встреча в природе — краткая)</SelectItem>
+                  <SelectItem value="ИК-1">ИК-1 (Разведение в неволе)</SelectItem>
+                  <SelectItem value="ИК-2">ИК-2 (Выпуск в природу)</SelectItem>
+                  <SelectItem value="КВ-1">КВ-1 (Встреча в природе — подробная)</SelectItem>
+                  <SelectItem value="КВ-2">КВ-2 (Встреча в природе — краткая)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
